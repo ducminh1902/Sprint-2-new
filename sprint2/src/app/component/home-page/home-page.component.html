@@ -1,0 +1,200 @@
+<div style="width: 100%; margin: 0;padding: 0; overflow: hidden">
+  <div style="background: #2f2d2d;color: aliceblue;height: 40px" class="row">
+    <div class="col-2"><p style="margin-left: 180px;padding-top: 7px">Hotline:077.946.9245</p></div>
+    <div class="col-3"><p style="margin-left: 180px;padding-top: 7px">Ghé Fanpage</p></div>
+    <div class="col-7">
+      <p style="margin-left: 300px;padding-top: 7px">HỆ THỐNG 7 CỬA HÀNG  <span style="margin-left: 30px;color: red" *ngIf="isLogged">{{user.name}}</span>
+      <button style="margin-left: 30px" *ngIf="isLogged" (click)="logout()">Đăng xuất</button>
+      <button style="margin-left: 30px" *ngIf="!isLogged" routerLink="/login">Đăng nhập</button>
+      </p>
+    </div>
+  </div>
+  <div style="background: white;height: 100px" class="row">
+    <div class="col-4"><img src="https://www.wheystore.vn/upload/website/logo_image_1587131466.png"
+                            style="height: 100px;width: 150px;margin-left: 350px"></div>
+    <div class="col-5">
+      <form class="d-flex" role="search" style="padding-top: 40px">
+        <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm và nhấn Enter..."
+               aria-label="Search" style="width:450px">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="col-3" style="padding-top: 40px">
+      <button  class="btn btn-danger" type="submit">Xem giỏ hàng</button>
+    </div>
+  </div>
+  <div>
+    <div style="background: #0d90df;height: 50px">
+      <div style="margin-left: 200px">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b style="color: white">Trang chủ</b></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="color: white;">Sữa tăng cân</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color: white">Whey protein</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color: white">BCAAs,EAAs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" style="color: white">Preworkout,Creatine</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" style="color: white">Vitamin,Khoáng chất</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" style="color: white">Giảm mỡ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" style="color: white">Phụ kiện</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="carouselExample" class="carousel slide" style="height:500px;width: 1200px;margin-left: 160px">
+      <div class=" wh-100 w-100 carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.ytimg.com/vi/nJN82vV9xLQ/maxresdefault.jpg" style="height: 500px" class="d-block w-100"
+               alt="...">
+        </div>
+        <div style="width: 100%" class="carousel-item">
+          <img src="https://thesharpe.com/wp-content/uploads/2017/03/Whey-Gold-Standard-Protein-Optimum-Nutrition.jpg"
+               style="height: 500px" class="d-block w-100 wh-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://beastworkouts.com/wp-content/uploads/2018/02/c4-pre-workout-1.jpg" style="height: 500px"
+               class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br>
+  <div style="background: #b6b2b2;height: 100px" class="row">
+    <ul class="nav justify-content-center" style="padding-top: 40px">
+      <li class="nav-item" s>
+        <b style="color: red">SHIP COD TOÀN QUỐC</b>
+        <p>Nhận hàng & thanh toán tiền tại nhà</p>
+      </li>
+      <li class="nav-item">
+        <b style="color: red">ĐỘI NGŨ TƯ VẤN CHUYÊN SÂU</b>
+        <p>Tư vấn 1 cách bài bản, khoa học nhất</p>
+      </li>
+      <li class="nav-item">
+        <b style="color: red">ĐỔI TRẢ THEO QUY ĐỊNH</b>
+        <p>Cho phép bạn đổi trả hàng trong 30 ngày</p>
+      </li>
+    </ul>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-4">
+      <img src="https://www.wheystore.vn/upload/ad/upl_ad_1670577456_image_1670577456.jpg" style="height: 200px"
+           width="500px">
+    </div>
+    <div class="col-4">
+      <img src="https://www.wheystore.vn/upload/ad/upl_ad_1670577470_image_1670577470.jpg" style="height: 200px"
+           width="500px">
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <br>
+  <div>
+    <hr>
+    <p style="text-align: center"><b style="color: black">SẢN PHẨM HOT NHẤT</b></p>
+    <hr>
+  </div>
+  <div class="row">
+<!--    danh sách sản phẩm -->
+    <div class="row" style="display: flex;flex-wrap: wrap">
+      <div class="col-md-3" *ngFor="let product of productList">
+        <div class="card" style="width: 18rem;">
+          <img src="{{product.productImg}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{product.productName}}</h5>
+            <p class="card-text">{{product.productDescripe}}</p>
+            <p class="card-text"><b style="color: orangered">{{product.productPrice}}0.000 đ</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div>
+    <hr>
+    <p style="text-align: center"><b>CÁC THƯƠNG HIỆU HÀNG ĐẦU</b></p>
+    <hr>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10" style="margin-left: 20px">
+        <img src="https://www.wheystore.vn/upload/trademark/nutrabolics.jpg">
+        <img src="https://www.wheystore.vn/upload/trademark/optimum-nutrition.jpg">
+        <img src="https://www.wheystore.vn/upload/trademark/labrada.jpg">
+        <img src="https://www.wheystore.vn/upload/trademark/upl_image_1658731402_image_1658731402.png">
+        <img src="https://www.wheystore.vn/upload/trademark/myprotein.jpg">
+        <img src="https://www.wheystore.vn/upload/trademark/mutant.jpg">
+        <img src="https://www.wheystore.vn/upload/trademark/rule1-protein.jpg">
+        <img src="https://www.wheystore.vn/upload/trademark/bpi-sports.jpg">
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <div class="row" style="background:#0d90df;height: 300px">
+    <div class="col-1"></div>
+    <div class="col-10 row">
+      <div class="col-3" style="padding-top: 20px">
+        <p style="color: black"><b>GIỚI THIỆU CHUNG</b></p>
+        <p style="color: white">Giới thiệu về Whey Store</p>
+        <p style="color: white">Chỉnh sách đổi trả hàng</p>
+        <p style="color: white">Qui định chung </p>
+        <p style="color: white">Liên hệ khiếu nại </p>
+      </div>
+      <div class="col-3" style="padding-top: 20px">
+        <p style="color: black"><b>HỖ TRỢ KHÁCH HÀNG</b></p>
+        <p style="color: white">Liên hệ đặt hàng</p>
+        <p style="color: white">Hướng dẫn thanh toán</p>
+        <p style="color: white">Chính sách vận chuyển</p>
+        <p style="color: white">Chính sách bảo mật</p>
+        <p style="color: white">Chính sách bảo hành</p>
+      </div>
+      <div class="col-3" style="padding-top: 20px">
+        <p style="color: black"><b>THÔNG TIN CẦN BIẾT</b></p>
+        <p style="color: white">Kiểm tra tích điểm</p>
+        <p style="color: white">Săn hàng giá rẻ</p>
+        <p style="color: white">Kiến thức tập gym</p>
+        <p style="color: white">Chế độ dinh dưỡng</p>
+      </div>
+      <div class="col-3">
+        <img src="https://www.wheystore.vn/upload/website/logo_image_1587131466.png" style="width: 200px;height: 100px">
+        <br>
+        <br>
+        <img src="https://furamavietnam.com/wp-content/uploads/2019/06/social-ins.png">
+        <img src="https://furamavietnam.com/wp-content/uploads/2019/06/social-ins.png">
+        <img src="https://furamavietnam.com/wp-content/uploads/2021/10/social-youtube.png">
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+</div>
