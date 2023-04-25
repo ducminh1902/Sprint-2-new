@@ -6,23 +6,23 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class ProductType {
+public class Flavor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String nameFlavor;
 
-    private String nameType;
-
-    @OneToMany(mappedBy = "productType")
+    @OneToMany(mappedBy = "flavor")
     @JsonIgnore
     private Set<Product> productSet;
 
-    public ProductType() {
+
+    public Flavor() {
     }
 
-    public ProductType(int id, String nameType, Set<Product> productSet) {
+    public Flavor(int id, String nameFlavor, Set<Product> productSet) {
         this.id = id;
-        this.nameType = nameType;
+        this.nameFlavor = nameFlavor;
         this.productSet = productSet;
     }
 
@@ -34,12 +34,12 @@ public class ProductType {
         this.id = id;
     }
 
-    public String getNameType() {
-        return nameType;
+    public String getNameFlavor() {
+        return nameFlavor;
     }
 
-    public void setNameType(String nameType) {
-        this.nameType = nameType;
+    public void setNameFlavor(String nameFlavor) {
+        this.nameFlavor = nameFlavor;
     }
 
     public Set<Product> getProductSet() {

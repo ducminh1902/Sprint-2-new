@@ -3,26 +3,26 @@ package com.example.be.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.lang.management.GarbageCollectorMXBean;
 import java.util.Set;
 
 @Entity
-public class ProductType {
+public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String nameBrand;
 
-    private String nameType;
-
-    @OneToMany(mappedBy = "productType")
+    @OneToMany(mappedBy = "brand")
     @JsonIgnore
     private Set<Product> productSet;
 
-    public ProductType() {
+    public Brand() {
     }
 
-    public ProductType(int id, String nameType, Set<Product> productSet) {
+    public Brand(int id, String nameBrand, Set<Product> productSet) {
         this.id = id;
-        this.nameType = nameType;
+        this.nameBrand = nameBrand;
         this.productSet = productSet;
     }
 
@@ -34,12 +34,12 @@ public class ProductType {
         this.id = id;
     }
 
-    public String getNameType() {
-        return nameType;
+    public String getNameBrand() {
+        return nameBrand;
     }
 
-    public void setNameType(String nameType) {
-        this.nameType = nameType;
+    public void setNameBrand(String nameBrand) {
+        this.nameBrand = nameBrand;
     }
 
     public Set<Product> getProductSet() {
